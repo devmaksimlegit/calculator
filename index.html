@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+  <form action="" id="form-card" class="card__form form-card" data-da="card__product,1,1100">
+    <div class="form-card__title" data-value="iPhone 11 Pro">
+      iPhone 11 Pro
+    </div>
+    <div class="form-card__memory">
+       <div class="form-card__text">
+          Объем встроенной памяти, гб:
+       </div>
+       <div class="form-card__list">
+          <div class="form-card__block">
+             <input type="radio" name="memory" id="memory64" value="1200" checked>
+             <label for="memory64">64</label>
+          </div>
+          <div class="form-card__block">
+             <input type="radio" name="memory" id="memory128" value="2400">
+             <label for="memory256">256</label>
+          </div>
+          <div class="form-card__block">
+             <input type="radio" name="memory" id="memory256" value="3300">
+             <label for="memory512">512</label>
+          </div>
+       </div>
+    </div>
+    <div class="form-card__color">
+       <div class="form-card__text">
+          Выберите цвет:
+       </div>
+       <div class="form-card__block">
+          <select name="form[]" class="form-card__select">
+             <option value="1" selected="selected">Черный</option>
+             <option value="2">Красный</option>
+             <option value="3">Синий</option>
+             <option value="4">Серый</option>
+          </select>
+       </div>
+    </div>
+    <div class="form-card__rate">
+       <div class="form-card__text">
+          Выберите тариф:
+       </div>
+       <div class="form-card__list">
+          <div class="form-card__block-rate">
+             <input type="radio" name="tariff" id="flexibletariff" value="1000" checked>
+             <label for="flexibletariff">Гибкий</label>
+          </div>
+          <div class="form-card__block-rate">
+             <input type="radio" name="tariff" id="annualtariff" value="2000">
+             <label for="annualtariff">Годовой</label>
+          </div>
+          <div class="form-card__block">
+             <a href="#popup" class="form-card__help popup-link">?</a>
+          </div>
+       </div>
+    </div>
+    <div class="form-card__cost">Стоимость покупки:<span id="cost"></span>₽</div>
+    <div class="form-card__enjoy">
+       Пользуйся всего за:
+       <span id="price"></span>
+       <span class="rub">
+          ₽ в месяц
+       </span>
+    </div>
+    <div class="form-card__included">
+       Включено в стоимость:
+    </div>
+    <div class="form-card__included-text">
+       <span>Доставка</span>
+       <span>Страховка</span>
+    </div>
+    <a href="#popupreg" class="form-card__btn popup-link">Взять в подписку</a>
+  </form>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
